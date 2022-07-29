@@ -5,7 +5,7 @@
  }
 body {
     font-family: 'Red Hat Display', sans-serif;
-    background-image: url(images/pattern-background-desktop.svg);
+    background-image: url(pattern-background-desktop.svg);
     background-color: hsl(225, 100%, 94%);
     min-height: 100vh;
     position: relative;
@@ -100,7 +100,7 @@ a.cancel-btn:hover {
 }
 @media only screen and(max-width: 425px) {
     body {
-        background-image: url(images/pattern-background-mobile.svg);
+        background-image: url(pattern-background-mobile.svg);
         font-size: 14px;
     }
     .card {
