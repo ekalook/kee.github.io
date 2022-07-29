@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-color: hsl(225, 100%, 94%);
+    min-height: 100vh;
+    position: relative;
+    font-size: 14px;
+}
+
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 400px;
+    max-height: 550px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.header-text {
+    margin-bottom: 50px;
+    padding: 5%;
+    text-align: center;
+}
+.title {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.header-text p.subtitle {
+    color: #8a8a8a;
+    margin-bottom: 20px;
+}
+.content-box {
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 12px;
+    display: flex;
+    padding: 10px;
+    margin: 2px;
+    padding-bottom: 35px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.content-box-musical {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}  
+.content-box-musical div {
+    margin-left: 20px;
+}
+.content-box-musical div h5 {
+    font-weight: 900;
+    font-size: 15px;
+    color: hsl(223, 47%, 23%);
+}
+.content-box-musical div p {
+    font-size: 14px;
+    color: #8a8a8a;
+}
+.content-box a {
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    transition: color .3s ease;
+}
+.content-box a:hover {
+    text-decoration: none;
+    color: hsl(245, 75%, 52%);
+}
+a.proceed-btn {
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: hsl(245, 75%, 52%);
+    padding: 15px;
+    border-radius: 12px;
+    margin: 15px 0;
+    transition: backgroun-color .3s ease;
+
+}
+a.proceed-btn:hover {
+    background-color: hsl(224, 23%, 55%);
+}
+a.cancel-btn {
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+    font-weight: 900;
+    transition: color .3s ease;
+}
+a.cancel-btn:hover {
+    color: hsl(223, 47%, 23%);
+}
+@media only screen and(max-width: 425px) {
+    body {
+        background-image: url(images/pattern-background-mobile.svg);
+        font-size: 14px;
+    }
+    .card {
+        max-width: 100%;
+    }
+    .title {
+        font-size: 23px;
+    }
+    div.content-box {
+        padding: 12px;
+    }
+    .content-box-musical div {
+        margin-left: 10px;
+    }
+    a.proceed-btn,
+    a.cancel-btn,
+    .content-box a {
+        font-size: 13px;
+    }
+    .header-text {
+        padding: 9% 7%;
+    }
+}
